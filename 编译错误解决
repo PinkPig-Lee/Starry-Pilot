@@ -1,0 +1,5 @@
+#StarryPilot
+
+编译错误解决方法：
+1、未定义变量需要将Framework/source/Mavproxy目录下的.C文件加到项目中
+2、重复定义mav_status,修改其中一个变量即可！
