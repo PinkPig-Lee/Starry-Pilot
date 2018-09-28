@@ -1,5 +1,6 @@
 #StarryPilot
 
 编译错误解决方法：
-1、未定义变量需要将Framework/source/Mavproxy目录下的.C文件加到项目中
-2、重复定义mav_status,修改其中一个变量即可！
+1、未定义变量需要将Framework/source/Mavproxy目录下的.C文件加到项目中;
+2、重复定义mav_status,修改其中一个变量即可！;
+3、启动文件中 Heap_size需要调整（0x00005000 --> 0x00010000）,否则不能从文件系统进行烧写程序到IO;
